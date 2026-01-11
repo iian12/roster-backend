@@ -22,7 +22,19 @@ public class Users {
     private final String subjectId;
 
     @Builder
-    public Users(String email, String nickname, String passwordHash, String profileImgUrl, String phone, String bio, AccountStatus accountStatus, Role role, String handle, Provider provider, String subjectId) {
+    public Users(
+            String email,
+            String nickname,
+            String passwordHash,
+            String profileImgUrl,
+            String phone,
+            String bio,
+            AccountStatus accountStatus,
+            Role role,
+            String handle,
+            Provider provider,
+            String subjectId
+    ) {
         this.userId = UserId.newId();
         this.email = email;
         this.nickname = nickname;
